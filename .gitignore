@@ -1,0 +1,41 @@
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+*.tfvars
+*.tfvars.json
+
+# Terraform crash logs
+crash.log
+crash.*.log
+
+# Ignore .terraform directory (Terraform plugins and modules)
+../kube/.terraform/
+.terraform.lock.hcl
+
+# Ignore provider override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore Terraform plan files
+*.tfplan
+
+# Ignore output files
+*.out
+
+# Ignore sensitive SSH and credentials
+*.pem
+*.key
+*.p12
+*.crt
+*.csr
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+*.iml
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
