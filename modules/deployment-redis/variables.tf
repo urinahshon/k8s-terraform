@@ -34,3 +34,9 @@ variable "redis_requests_mem" {
 variable "redis_service_type" {
   default = "ClusterIP" # Change to NodePort if external access is needed
 }
+
+variable "create_redis" {
+  description = "Set to 1 to create the Redis service, 0 to skip the creation"
+  type        = number
+  default     = 1  # Default to creating the Redis service
+}

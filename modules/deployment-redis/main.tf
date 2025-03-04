@@ -1,4 +1,5 @@
 resource "kubernetes_deployment" "redis" {
+  count = var.create_redis # Only create the deployment if create_redis is 1
   metadata {
     name = var.redis_name
     namespace = kubernetes_namespace.redis_ns.metadata[0].name
